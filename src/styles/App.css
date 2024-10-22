@@ -1,0 +1,17 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  font-family: "Tiro Devanagari Sanskrit", serif;
+  font-weight: 400;
+  font-size: 1 rem;
+  font-style: normal;
+  background-color: #000;
+  color: #fff;
+  position:relative;
+}

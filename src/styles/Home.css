@@ -1,0 +1,735 @@
+.homeMain{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 3.5rem;
+  width: 100%;              
+  font-family: "Tiro Devanagari Sanskrit", serif;
+ 
+}
+
+
+/* Hero Section */
+.hero {
+    
+    height:100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    align-items: center;
+     background-image: url('/Users/parthkhandelwal/Documents/devershikapandit/client/src/images/Tatiyana_bridal2.jpg');
+    background-size: cover;
+    
+    position: relative;
+    
+  }
+
+  .hero-quote p{
+    display: block;
+    font-size: 4rem;
+    justify-self: center;
+    white-space: nowrap;  
+    overflow: hidden;     
+    text-overflow: ellipsis; 
+    text-shadow: 1.5px 1.5px 3px #000;
+   
+}
+  .hero-text{
+    align-self:flex-start;
+    padding: 1rem;
+    font-weight:lighter;
+    text-shadow: 1.5px 1.5px 3px #000;
+  }
+  .background-video{
+    display: none;
+  }
+  /* About Component */
+
+  .aboutHome{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+    
+   
+    padding-left: 5rem;
+    padding-right:5rem;
+    
+  }
+
+  .aboutHome__image{
+    width:25%;
+  }
+  .aboutHome__image img{
+    width: 100%; 
+    border-radius: 15px;
+  }
+  .aboutHome__image figcaption{
+  position: absolute;
+    left: -1000px;
+  }
+  
+
+  .aboutHome__content {
+    flex: 1.5;
+    padding-left: 40px; 
+    display: flex;
+    flex-direction: column;
+    align-items:flex-start;
+    
+  }
+  .aboutHome__content p{
+    margin-bottom: 20px;
+  }
+  
+
+  
+  .ReadMore__button{
+    display: inline-block;
+    margin-top: 20px;
+    align-self: flex-end;
+  }
+
+  .ReadMore__button a {
+    padding: 10px 20px;
+    background-color: #000;
+    color: white; /* White text */
+    border: 1px solid white;
+    border-radius: 18px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+/* Latest */
+  .latest{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height:100vh;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding-left: 5rem;
+    padding-right:5rem;
+
+  }
+ 
+  .latestcards{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    gap: 20px;
+    align-items: center;
+    
+  }
+
+  .latestcard{
+    width:25%;
+  }
+  .latestcard img{
+    width: 100%;
+    border-radius: 15px;
+
+  }
+
+
+/* Projects */
+.projectsComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  margin-bottom: 2rem;
+  
+}
+.projectsComponent h2{
+  align-self: flex-start;
+  margin-bottom: 10px;
+  
+}
+
+
+.projectsComponent-item {
+  display: flex;
+  
+  flex-direction: row; 
+
+  justify-content:flex-start;
+  align-items: flex-start;
+  width: 100%;
+  height: fit-content;
+  flex-wrap: nowrap;
+  width: 100%;
+  margin-bottom: 2rem; 
+  border-radius: 15px;
+}
+
+
+
+.projectsComponent-image {
+  flex: 1; /* Allow image to take up some space */
+  width: 25%; /* Ensure the image doesn’t take up more than 35% of the row */
+}
+
+.projectsComponent-info {
+  flex: 2; /* Let the info take up more space */
+  padding-left: 2rem; /* Creates space between image and text */
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.projectsComponent-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+  object-fit: cover; /* Ensures the image fits well */
+}
+
+.projectsComponent-info h2 {
+  font-size: 1.8rem; /* Adjust font size */
+  margin-bottom: 0.5rem;
+  color: #cccccc;
+}
+
+.projectsComponent-info p {
+  font-size: 1rem;
+  overflow: hidden;
+  text-overflow: ellipsis;     /* Show "..." for overflowing text */
+  display: inline-block;  
+  color: #cfcfcf; /* Light gray for description */
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1200px){
+  .homeMain{
+    gap: 3rem;
+  
+   
+  }
+  .hero{
+    background-image: url("../images/Tatiyana_bridal2.jpg");
+    background-size:cover;
+  }
+
+/* ABout */
+  .aboutHome{
+    display: flex;
+    flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  
+   padding-left: 2rem;
+    padding-right:2rem;
+    
+  }
+
+  .aboutHome__image{
+    width:30%;
+  }
+ 
+ 
+
+  .aboutHome__content {
+
+    padding-left: 30px; 
+    font-size: 0.9rem;
+  }
+/* Latest */
+.latest{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height:100vh;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-left: 2rem;
+  padding-right:2rem;
+
+}
+
+.latestcards{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  gap: 20px;
+  align-items: center;
+  
+}
+
+.latestcard{
+  width:25%;
+}
+.latestcard img{
+  width: 100%;
+  border-radius: 15px;
+
+}
+
+
+
+  .projectsComponent {
+    
+    padding-left: 2rem;
+    padding-right: 2rem;
+    
+    
+  }
+  
+  
+  
+  .projectsComponent-image {
+    
+    width: 30%; 
+  }
+  
+ 
+  
+  .projectsComponent-info h2 {
+    font-size: 1.8rem; /* Adjust font size */
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+  }
+  
+  .projectsComponent-info p {
+    font-size: 0.9rem;
+  }
+  
+  .ReadMore__button{
+    margin-top: 30px;
+  }
+  
+  .ReadMore__button a {
+    padding: 7px 16px;
+    font-size: 0.7rem;
+    
+  }
+  
+  
+}
+
+/* read more */
+
+
+
+@media (max-width: 768px) {
+  .homeMain{
+    gap: 2rem;
+  
+   
+  }
+  .hero{
+    background-image: url("../images/Tatiyana_bridal2\ copy.png");
+    background-size:cover;
+  }
+  .hero-quote p{
+  font-size: 2.7rem;
+
+  }
+  .hero-text p{
+    font-size: 0.7rem;
+  }
+
+.aboutHome{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+ }
+
+ .aboutHome__image{
+   width:70%;
+ }
+
+/* lATEST */
+
+.latest h2{
+  align-self: center;
+  position: relative;
+}
+
+.latestcards {
+  display: unset;
+  height: 50vh;
+  position: relative;  
+  list-style-type: none;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  max-width:500px ;
+  margin-bottom: 4rem;
+
+  
+}
+
+/* Card styles */
+.latestcard {
+  position: absolute;
+  width: 50%;
+  top: 1rem;
+  left: 20%;
+  right: 30%;
+  z-index: 2;
+  border-radius: 30px;
+  padding: 0;
+  box-shadow: 0 0 40px #000;
+  transform: translateY(0) rotate(4deg) translateX(25px) scale(1);
+  transform-origin: 0 0;
+  transition: transform 0.6s cubic-bezier(.8,.2,.1,0.8) 0.1s,
+              background 0.4s linear;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Last card */
+.latestcard:last-child {
+  margin-bottom: 0;
+}
+
+/* Card next styles */
+.latestcard--next { 
+  z-index: 5; 
+  transform: translateY(-25px) rotate(4deg) translateX(25px) scale(1);
+}
+
+/* Card out animation and styles */
+.latestcard--out {
+  animation: card-out 0.6s cubic-bezier(.8,.2,.1,0.8);
+  transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+  z-index: 1;
+  background: none;
+}
+
+/* Card out keyframes animation */
+@keyframes card-out {
+  0% { 
+    z-index: 20; 
+    transform: translateY(0px) rotate(-4deg); 
+  }
+  50% { 
+    transform: translateY(-120%) rotate(-5deg) translateX(-40px); 
+  }
+  80% { 
+    z-index: 1; 
+  }
+  100% { 
+    transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95); 
+  }
+}
+
+/* Current card styles */
+.latestcard--current {
+  cursor: auto;
+  user-select: auto;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  background: none;
+  transform: rotate(-1deg) translateX(0%) scale(1);
+}
+
+
+ /* Projects */
+ .projectsComponent {
+  gap: 20px;
+  padding-left: 1rem;
+  padding-right: 1rem;
+
+}
+.projectsComponent h2{
+  align-self: center;
+
+  
+}
+
+
+.projectsComponent-item {
+  display: flex;
+  
+  flex-direction: column; 
+
+  justify-content:flex-start;
+  align-items: center;
+  padding-top: 1rem ;
+  padding-bottom: 1rem;
+  width: 100%;
+  height: fit-content;
+  flex-wrap: nowrap;
+  gap: 30px;
+  margin-bottom: 0rem; 
+ border: 2px solid white;
+ 
+  border-radius: 15px;
+}
+
+
+
+.projectsComponent-image {
+
+  width: 70%; 
+}
+
+.projectsComponent-info {
+  flex: 2; 
+  
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+  padding: 0 0.5rem;
+}
+
+
+.projectsComponent-info h2 {
+  font-size: 1.5rem;  
+}
+
+.projectsComponent-info p {
+  font-size: 0.9rem;
+}
+ .ReadMore__button{
+  margin-top: 30px;
+ }
+ 
+ .ReadMore__button a {
+  padding: 7px 16px;
+  font-size: 0.7rem;
+  
+ }
+ 
+}
+
+
+
+
+
+  @media (max-width: 480px){
+  
+    .hero {
+      
+      background-image: none;
+      position: relative;  /* Ensure the video stays within the hero section */
+      overflow: hidden;    /* Make sure the content doesn't overflow */
+      
+    }
+  
+    .hero-quote p{
+    
+      font-size: 1.5rem;
+     
+    }
+  
+    .hero-text {
+      align-self: flex-start;
+      padding-left: 1rem;
+      font-weight: lighter;
+      font-size: 0.6rem;
+    }
+  
+    .background-video {
+      position: absolute;   /* Position it inside the hero */
+      display: block;
+      top: 0;
+      left: 0;
+      right: 0;
+      width: 100%;
+      height: 100%;
+      object-fit:cover;    /* Make sure the video covers the hero area */
+      z-index: -1;          /* Keep it behind other content */
+      padding-right: 0;
+    }        
+
+
+
+
+    /* About */
+    .aboutHome{
+      padding-left: 0.5rem;
+      padding-right:0.5rem;
+      
+    }
+    .aboutHome__content {
+
+      
+      font-size: 0.6rem;
+    }
+    .aboutHome__image{
+      width:90%;
+    }
+   
+
+/* lATEST */
+
+.latest h2{
+  align-self: center;
+  position: relative;
+
+}
+
+.latestcards {
+  display: unset;
+  height: 50vh;
+  position: relative;  
+  list-style-type: none;
+  justify-content: center;
+  gap: 10px;
+  padding: 0;
+  max-width:500px ;
+  margin-bottom: 4rem;
+
+  
+}
+
+/* Card styles */
+.latestcard {
+  position: absolute;
+  width: 70%;
+  top: 1rem;
+  left: 15%;
+  right: 15%;
+  z-index: 2;
+  border-radius: 30px;
+  padding: 0;
+  box-shadow: 0 0 40px #000;
+  transform: translateY(0) rotate(4deg) translateX(25px) scale(1);
+  transform-origin: 0 0;
+  transition: transform 0.6s cubic-bezier(.8,.2,.1,0.8) 0.1s,
+              background 0.4s linear;
+  cursor: pointer;
+  user-select: none;
+}
+
+/* Last card */
+.latestcard:last-child {
+  margin-bottom: 0;
+}
+
+/* Card next styles */
+.latestcard--next { 
+  z-index: 5; 
+  transform: translateY(-25px) rotate(4deg) translateX(25px) scale(1);
+}
+
+/* Card out animation and styles */
+.latestcard--out {
+  animation: card-out 0.6s cubic-bezier(.8,.2,.1,0.8);
+  transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95);
+  z-index: 1;
+  background: none;
+}
+
+/* Card out keyframes animation */
+@keyframes card-out {
+  0% { 
+    z-index: 20; 
+    transform: translateY(0px) rotate(-4deg); 
+  }
+  50% { 
+    transform: translateY(-120%) rotate(-5deg) translateX(-40px); 
+  }
+  80% { 
+    z-index: 1; 
+  }
+  100% { 
+    transform: translateY(-50px) rotate(8deg) translateX(55px) scale(0.95); 
+  }
+}
+
+/* Current card styles */
+.latestcard--current {
+  cursor: auto;
+  user-select: auto;
+  position: relative;
+  z-index: 10;
+  opacity: 1;
+  background: none;
+  transform: rotate(-1deg) translateX(0%) scale(1);
+}
+
+
+ /*Latest Ends  */
+ 
+
+    /* Projects */
+    .projectsComponent {
+      gap: 20px;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+   
+    
+    
+    .projectsComponent-item {
+      gap: 20px;
+    }
+  
+    
+    .projectsComponent-image {
+
+      width: 90%; 
+    }
+    
+    .projectsComponent-info h2 {
+      font-size: 1.3rem;  
+    }
+    
+    .projectsComponent-info p {
+      font-size: 0.6rem;
+    }
+    .ReadMore__button{
+      margin-top: 10px;
+     }
+     
+     .ReadMore__button a {
+      padding: 6px 14px;
+      font-size: 0.6rem;
+      
+     }
+  
+  }
+  @media (max-width:410px) {
+    /* latest */
+    .latestcards{
+      margin-bottom: 3.5rem;
+
+    }
+    .latestcard{
+      width: 80%;
+      left:6%
+    }
+  }
+  @media (max-width:350px){
+    .latestcards{
+      margin-bottom: 3rem;
+
+    }
+    .latestcard{
+      width: 90%;
+      left:2%
+    }
+  }
+  @media (max-width:300px){
+    .latestcard{
+      width: 90%;
+    }
+    .latestcards{
+      margin-bottom: 0rem;
+    }
+  }
+  @media (max-width:300px){
+    .latestcards{
+      height: 45vh;
+    }
+  }

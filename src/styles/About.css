@@ -1,0 +1,210 @@
+.aboutPage {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+ 
+
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 1rem;
+}
+
+.aboutPage__main {
+  display: flex;
+  flex-direction: row; 
+  justify-content: space-between; 
+  align-items: flex-start;
+  width: 100%;
+}
+
+.aboutPage__image {
+  width: 25%;
+  height: auto;
+  background-color: black;
+  display: inline-block;
+}
+
+.aboutPage__image img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 15px;
+}
+
+.aboutPage__content {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 7px;
+  width: 70%; 
+  font-size: 1rem;
+  white-space: wrap;
+  text-align: left;
+  align-self: center;
+}
+.aboutPage__content h2{
+  align-self: flex-start;
+}
+
+/* Cards */
+   .card_stack {
+    --card-shown-x: 5rem;
+    --card-shown-y: 3rem;
+    --card-size-x: 25rem;
+    --card-size-y: 20rem;
+    --card-padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    padding-right: calc(var(--card-size-x) - var(--card-shown-x) + 2 * var(--card-padding));
+    padding-bottom: calc(var(--card-size-y) - var(--card-shown-y) + 2 * var(--card-padding));
+  }
+ .card_stack h2{
+  align-self:center;
+  margin-bottom: 1rem;
+ }
+  
+  .card_container {
+    position: relative;
+    margin-left: calc((var(--num) - 1) * var(--card-shown-x));
+    width: var(--card-shown-x);
+    height: var(--card-shown-y);
+  }
+
+  .card_container:nth-child(1) {
+    --num: 1;
+  }
+  
+  .card_container:nth-child(2) {
+    --num: 2;
+  }
+  
+  .card_container:nth-child(3) {
+    --num: 3;
+  }
+  
+  .card_container:nth-child(4) {
+    --num: 4;
+  }
+  
+  .card_container:nth-child(5) {
+    --num: 5;
+  }
+  
+  .card {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    min-width: var(--card-size-x);
+    min-height: var(--card-size-y);
+    padding: var(--card-padding);
+    border-radius: 1rem;
+    background: #2C2C2C;
+    color: white;
+    box-shadow: 0 0 1.5rem -0.25rem rgba(0, 0, 0, 0.75);
+    align-items: center;
+  
+  }
+  
+  .card.ghost {
+    z-index: 1;
+    opacity: 0;
+    transition: 0.25s ease;
+  }
+  
+  .card_container:not(:hover) .ghost {
+    pointer-events: none;
+  }
+  
+  .card_container:hover .ghost {
+    opacity: 1;
+  } 
+  
+  @media (max-width: 1200px){
+    .aboutPage {
+      
+      padding-left: 2rem;
+      padding-right: 2rem;
+
+    }
+    
+  
+    
+    .aboutPage__content {
+      font-size: 0.9rem;
+    }
+
+
+  /* card */
+  .card_stack {
+    --card-shown-x: 4rem;
+    --card-shown-y: 2rem;
+    --card-size-x: 23rem;
+    --card-size-y: 16rem;
+    --card-padding: 0.8rem;
+    display: flex;
+    flex-direction: column;
+    margin-top: 4rem;
+    padding-right: calc(var(--card-size-x) - var(--card-shown-x) + 2 * var(--card-padding));
+    padding-bottom: calc(var(--card-size-y) - var(--card-shown-y) + 2 * var(--card-padding));
+  }
+  }
+  @media (max-width: 768px){
+    .aboutPage{
+      padding-left: 1rem;
+      padding-right: 1rem;
+    }
+    .aboutPage__main {
+      display: flex;
+      flex-direction: column; 
+      justify-content: flex-start; 
+      align-items: center;
+      width: 100%;
+      gap: 20px;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    
+    .aboutPage__image {
+      width: 60%;
+      margin:auto
+     
+    }
+    
+    .aboutPage__content {
+      gap: 5px;
+      width: 100%; 
+      font-size: 0.7rem;
+      
+    }
+    .aboutPage__content h2{
+      align-self: flex-start;
+    }
+     /* card */
+     .card_stack {
+      display: none;
+      
+
+    }
+
+}
+
+  @media (max-width: 480px){
+    .aboutPage__main {
+      gap: 10px;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem;
+    }
+    .aboutPage__image {
+      width: 100%;    
+    }
+    .aboutPage__content {
+      gap: 3px;
+      font-size: 0.5rem; 
+    }
+  }

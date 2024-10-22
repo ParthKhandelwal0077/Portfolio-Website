@@ -1,0 +1,301 @@
+/* Footer Wrapper */
+.footer {
+    padding: 1rem 0; /* Reduced padding */
+    background-color: #000; /* Black background for contrast */
+    width: 100%;
+    height: auto; /* Let the height adjust based on the content */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  /* Quote Section */
+  .footer__quote {
+    background-color: #f8f5f2; /* Light background for the quote */
+    color: black;
+    font-family: "Tiro Devanagari Sanskrit", serif;
+    width: 100%;
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .footer__quoteItem {
+    font-size: 1.5rem; /* Slightly smaller to save space */
+    font-style: italic;
+  }
+  
+  .footer__quoteAuthor {
+    margin-top: 0.5rem; /* Reduce margin for compact design */
+    font-size: 1.1rem;
+    text-align: right;
+    width: 100%;
+  }
+  
+  /* Main Footer Section */
+  .footer__main {
+    display: flex;
+    justify-content:space-evenly;
+    align-items: flex-start;
+    width: 100%;
+    max-width: 1200px;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    padding-top: 1rem;
+  }
+  
+  .footer__mainPages {
+    width: 60%; /* Take more space to fit two columns */
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .footer__mainPages h2 {
+     /* Less margin to save space */
+    font-size: 1.2rem;
+    font-family: "Tiro Devanagari Sanskrit", serif;
+    color: white;
+    text-transform: uppercase;
+
+  }
+  
+  /* Split Pages List into Two Columns */
+  .footer__pagesList {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    /* grid-template-columns: repeat(2, 1fr); Two-column layout */
+    flex-direction:row ;
+    justify-content: space-evenly;
+    gap: 1rem;
+  }
+  
+  .footer__pagesItem {
+    font-size: 1.2rem; /* Slightly smaller */
+    font-weight: 500;
+  }
+  
+  .footer__pagesItem a {
+    color:#d1ccc0;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .footer__pagesItem a:hover {
+    color:  #E84A5F; /* Highlight color on hover */
+  }
+  
+  /* Logo Styling */
+  .footer__mainLogo {
+    width: 10%; /* Adjust to take less space */
+  }
+  
+  .footer__mainLogo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+  }
+  .footer__mainLogo p{
+    font-size: 0.7rem;
+    white-space: nowrap;
+  }
+  /* Social Media Icons */
+ 
+  .footer__socialIcons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+   
+  }
+  
+  .footer__socialMedia i{
+    width: 28px; /* Slightly smaller icons */
+    height: 28px;
+  }
+  .footer__socialMedia {
+    text-decoration: none;
+    color: white;  
+  }
+  .footer__socialMedia{
+    color: #E84A5F;
+  }
+
+
+  @media (max-width:1200px) {
+    /* Quote Section */
+  .footer__quote {
+    background-color: #f8f5f2; /* Light background for the quote */
+    color: black;
+    font-family: "Tiro Devanagari Sanskrit", serif;
+    width: 100%;
+    text-align: center;
+    padding: 1rem;
+  }
+  
+  .footer__quoteItem {
+    font-size: 1.25rem; 
+  }
+  
+  .footer__quoteAuthor {
+
+    font-size: 1rem;
+    
+  }
+
+
+
+  /* Main Footer Section */
+  .footer__main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.75rem;
+  }
+  
+  
+  .footer__mainPages h2 {
+    font-size: 1rem;
+
+  }
+  
+
+  .footer__pagesList {
+    gap: 0.75rem;
+  }
+  
+  .footer__pagesItem {
+    font-size: 0.9rem;
+  }
+  
+  
+  
+  .footer__mainLogo img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+
+  }
+  .footer__mainLogo p{
+    font-size: 0.5rem;
+    white-space: nowrap;
+  }
+
+ 
+  .footer__socialIcons {
+    gap: 0.75rem;
+   
+  }
+  
+  .footer__socialMedia i{
+    width: 20px; /* Slightly smaller icons */
+    height: 20px;
+  }
+    
+  }
+
+  
+  @media (max-width:768px) {
+    /* Quote Section */
+  .footer__quote {
+    padding: 0.75rem;
+  }
+  
+  .footer__quoteItem {
+    font-size: 1rem; 
+
+  }
+  
+  .footer__quoteAuthor {
+    margin-top: 0.4rem; 
+    font-size: 0.9rem;
+   
+  }
+      /* Main Footer Section */
+  .footer__main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    align-items:stretch;
+  }
+  
+  
+  .footer__mainPages h2 {
+    font-size: 0.9rem;
+
+  }
+  
+
+  .footer__pagesList {
+    gap: 0.5rem;
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+  }
+  
+  .footer__pagesItem {
+    font-size: 0.8rem;
+  }
+  
+  
+  
+  .footer__mainLogo img {
+    width: 100%;
+
+  }
+  .footer__mainLogo p{
+    font-size: 0.4rem;
+    white-space: nowrap;
+  }
+ 
+  }
+
+  @media (max-width:480px) {
+
+    /* Quote Section */
+  .footer__quote {
+    padding: .5rem;
+  }
+  
+  .footer__quoteItem {
+    font-size: 0.9rem; 
+  }
+  
+  .footer__quoteAuthor {
+    margin-top: 0.25rem; 
+    font-size: 0.7rem;
+   
+  }
+  .footer__main {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    align-items:stretch;
+  }
+  
+  
+  .footer__mainPages h2 {
+    font-size: 0.7rem;
+
+  }
+  
+
+  .footer__pagesList {
+    gap: 0.25rem;
+    flex-wrap: wrap;
+    row-gap: 0.25rem;
+  }
+  
+  .footer__pagesItem {
+    font-size: 0.6rem;
+  }
+.footer__mainLogo p{
+  font-size: 0.25rem;
+}
+  
+  }

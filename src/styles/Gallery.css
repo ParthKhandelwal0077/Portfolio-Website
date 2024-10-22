@@ -1,0 +1,100 @@
+.gallery{
+  height: fit-content;
+
+  
+ 
+}
+
+.gallery-title h1{
+  
+  margin-left: 1rem;
+}
+/* Grid styling */
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 15px;
+  padding: 20px;
+ 
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  cursor: pointer;
+  border-radius: 8px;
+  transition: transform 0.2s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05); /* Slight zoom effect on hover */
+}
+
+/* Modal styling */
+.modal {
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Dark backdrop */
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.modal-content {
+  max-width: 40%; /* Display image at 40% of the screen size */
+  max-height: 40%;
+  border-radius: 10px;
+  cursor: auto; /* Ensure the image inside the modal doesn't trigger closing */
+}
+
+.modal-image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Close button styling */
+.close-btn {
+  position: absolute;
+  top: 110px;
+  right: 10px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.close-btn i {
+  font-size: 40px;
+  color: #fff;
+}
+
+.close-btn:hover {
+  color: #bbb;
+}
+
+/* Ensure that clicking the modal outside the image also closes the modal */
+.modal {
+  cursor: pointer;
+}
+
+
+
+
+@media (max-width:768px) {
+  .modal-content {
+    max-width: 60%; 
+  }
+}
+@media (max-width:480px) {
+  .modal-content {
+    max-width: 70%; 
+  }
+}

@@ -1,0 +1,139 @@
+
+
+.Restricted{
+    margin: auto;
+    width: 80vw;
+    height: fit-content;
+    border: 5px solid white;
+    border-radius: 15px;
+    background-color: #000;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    padding:1rem;
+    color: aliceblue;
+
+}
+.Restricted__content{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    margin: 2rem 0;
+
+}
+
+.Restricted__content-figure{
+    width: 20%;
+    height: auto;
+}
+
+.Restricted__content-figure img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+}
+.Restricted__content P{
+    width: 70%;
+    margin:0 1rem;
+}
+
+.Restricted__content span{
+    display: block;
+    font-weight: bolder;
+}
+
+.signOut-button{
+    display: inline-block;
+    margin-top: 30px;
+    align-self: flex-end;
+    padding: 10px 20px;
+    background-color: #000;
+    color: white; /* White text */
+    border: 1px solid white;
+    border-radius: 18px;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+@media (max-width:1200px){  
+    .Restricted__content-figure{
+        width: 40%;
+    }
+
+    .Restricted__content P{
+        width: 60%;
+        font-size: 0.7rem;
+    }
+    
+    
+    .signOut-button{
+        margin-top: 25px;
+        padding: 7px 15px;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width:768px){
+    .Restricted{
+        padding:0.5rem;
+    }
+    .Restricted__content{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        padding: 0.5 0;
+    
+    }
+    
+    .Restricted__content-figure{
+        width: 50%;
+    }
+
+    .Restricted__content P{
+        width: 100%;
+        margin:0 1rem;
+        padding: 0.5rem;
+        font-size: 0.6rem;
+    }
+    
+    .signOut-button{
+        padding: 6px 12px;
+        font-size: 0.6rem;
+    }
+    
+}
+
+@media (max-width:480px){
+    .Restricted{
+        padding:0.25rem;
+    }
+    .Restricted__content{
+        display: flex;
+        flex-direction: column;
+        justify-content:flex-start;
+        align-items: center;
+        padding: 0.5 0;
+    
+    }
+    
+    .Restricted__content-figure{
+        width: 70%;
+    }
+
+    .Restricted__content P{
+        width: 100%;
+        margin:0 1rem;
+        padding: 0.5rem;
+        font-size: 0.6rem;
+    }
+    
+    .signOut-button{
+        padding: 4px 10px;
+        font-size: 0.6rem;
+    }
+}

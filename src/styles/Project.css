@@ -1,0 +1,141 @@
+.projects-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding-left: 5rem;
+  padding-right: 5rem;
+  padding-top: 2rem;
+}
+
+.project-item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  
+}
+
+
+.project-image  {
+  width: 30%; 
+  height: auto;
+  
+}
+.project-image img{
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+
+.project-info {
+  max-width: 70%; /* Adjust as needed */
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+}
+
+.project-info h2 {
+  /* font-size: 24px; */
+  margin-bottom: 10px;
+}
+
+.project-info p {
+  font-size: 16px;
+  line-height: 1.5;
+  color: #cccccc;
+}
+
+
+@media (max-width:1200px) {
+  .projects-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 2rem;
+  }
+  
+
+}
+@media  (max-width:768px){
+  .projects-container {
+    gap: 30px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+   
+  }
+  
+  .project-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 1rem ;
+    padding-bottom: 1rem;
+    border: 2px solid white;
+ 
+  border-radius: 15px;
+  }
+  
+  
+  .project-image  {
+    width: 70%; 
+    
+  }
+  
+  .project-info {
+    max-width: 100%; /* Adjust as needed */
+    padding: 0 0.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+   gap: 30px;
+  }
+  
+  .project-info h2 {
+    font-size: 1.5rem;
+
+
+  }
+  
+  .project-info p {
+   
+    font-size: 0.9rem;
+  }
+  
+  
+}
+@media (max-width:480px) {
+  .projects-container {
+    gap: 20px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+   
+  }
+  
+  
+  
+  .project-image  {
+    width: 90%; 
+    
+  }
+  
+  .project-info {
+    gap:20px
+  
+  }
+  
+  .project-info h2 {
+    font-size: 1.3rem;
+  
+
+  }
+  
+  .project-info p {
+   
+    font-size: 0.6rem;
+  }
+}
